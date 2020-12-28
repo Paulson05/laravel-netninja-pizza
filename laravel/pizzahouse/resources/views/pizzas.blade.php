@@ -77,9 +77,9 @@
                             </div>
                         </div>
 
-                        <p>{{$type}}- {{$base}}</p>
-                        
-
+                        <p>{{$type}}- {{$base}} - {{$price}}</p>
+                        <p>{{$type}}- {{$base}} - {{$price}}</p>
+                        <p>{{$type}}- {{$base}} - {{$price}}</p>
                         
                     </div>
                 </div>
