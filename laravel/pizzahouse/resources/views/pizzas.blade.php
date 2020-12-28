@@ -21,6 +21,7 @@
             p{
             text-align: center;
             color: red;
+            border: 1px solid black;
             }
         </style>
     </head>
@@ -78,9 +79,20 @@
                         </div>
 
                         <p>{{$type}}- {{$base}} - {{$price}}</p>
-                        <p>{{$type}}- {{$base}} - {{$price}}</p>
-                        <p>{{$type}}- {{$base}} - {{$price}}</p>
+                        @if($price > 15)
+                             <p>this pizza is expensive</p>
+                             @elseif($price < 5)
+                             <p>this pizza is cheap</p>
+                             @else
+                             <p>this pizza is normally price</p>
+                        @endif
+                        @php
+                        $name = 'onyebucchi';
+                      
+                         
+                         echo ($name);
                         
+                        @endphp
                     </div>
                 </div>
 
