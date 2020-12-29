@@ -18,7 +18,7 @@
 
     <div class="content">
         <div class="title m-b-md">
-            Pizza House<br />
+        <img src="/img/img1.png" alt="">
             The North's Best Pizzas
         </div>
     </div>
