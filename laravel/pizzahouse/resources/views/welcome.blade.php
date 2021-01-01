@@ -20,6 +20,7 @@
         <div class="title m-b-md">
         <img src="/img/img1.png" alt="">
             The North's Best Pizzas in the world
+            
         </div>
     </div>
 </div>
