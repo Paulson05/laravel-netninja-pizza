@@ -13,7 +13,7 @@ class Pizza2Controller extends Controller
     // get data from a database
     $pizzas = Pizza::all();
 
-    return view('pizzas', [
+    return view('pizzas.index', [
       'pizzas' => $pizzas,
     ]);
   }
@@ -21,6 +21,23 @@ class Pizza2Controller extends Controller
   public function show($id) {
     // use the $id variable to query the db for a record
     return view('details', ['id' => $id]);
+  }
+  public function create() {
+    
+    return view('pizzas.create',);
+  }
+
+  public function store() {
+       
+    $pizza = new Pizza();
+
+    $pizza->name = request('name');
+    $pizza->type = request('type');
+    $pizza->base = request('base');
+
+    $pizza->save();
+
+    return redirect('/')->with('mssg', 'Thanks for your order!');
   }
 
 }
