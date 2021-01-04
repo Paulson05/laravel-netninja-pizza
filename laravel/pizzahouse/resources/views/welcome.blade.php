@@ -22,6 +22,7 @@
             The North's Best Pizzas in the world
             
         </div>
+        <a href="/pizzas/create">order a pizza</a>
     </div>
 </div>
 @endsection
