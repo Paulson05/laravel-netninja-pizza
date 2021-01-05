@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.app')
 
 @section('content')
 @foreach($pizzas as $pizza)
@@ -7,5 +7,5 @@
           </div>
         @endforeach
 
-<a href="/pizzas" class="back"><- Back to all pizzas</a>
+
 @endsection

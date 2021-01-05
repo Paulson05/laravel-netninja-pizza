@@ -18,7 +18,7 @@
 
     <div class="content">
         <div class="title m-b-md">
-        <img src="/img/img1.png" alt="">
+        <img src="/img/saji.png" alt="">
             The North's Best Pizzas in the world
             
         </div>

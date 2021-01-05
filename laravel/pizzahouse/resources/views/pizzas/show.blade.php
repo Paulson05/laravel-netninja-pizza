@@ -1,7 +1,8 @@
-@extends('layouts.layout')
+@extends('layouts.app')
 
 @section('content')
 <div class="wrapper pizza-details">
+
   <h1>Order for {{ $pizza->name }}</h1>
   <p class="type">Type - {{ $pizza->type }}</p>
   <p class="base">Base - {{ $pizza->base }}</p>
@@ -12,5 +13,5 @@
   </form>
 </div>
 
-<a href="/" class="back"><- Back to all pizzas</a>
+<a href="/pizzas" class="back"><- Back to all pizzas</a>
 @endsection
