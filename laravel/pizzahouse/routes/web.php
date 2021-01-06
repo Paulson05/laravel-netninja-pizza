@@ -18,11 +18,12 @@ Route::get('/', function () {
 });
 
 
-Route::get('/pizzas', 'Pizza2Controller@index');
+Route::get('/pizzas', 'Pizza2Controller@index')-> middleware('auth');
 Route::get('/pizzas/create', 'Pizza2Controller@create');
 Route::post('/pizzas', 'Pizza2Controller@store');
-Route::get('/pizzas/{id}', 'Pizza2Controller@show');
-Route::delete('/pizzas/{id}', 'pizza2Controller@destroy');
-Auth::routes();
+Route::get('/pizzas/{id}', 'Pizza2Controller@show')->middleware('auth');
+Route::delete('/pizzas/{id}', 'pizza2Controller@destroy')->middleware('auth');
+Auth::routes(
+);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
